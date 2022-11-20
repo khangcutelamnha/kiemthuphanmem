@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Default Suite">
+
+
+
+    <test name="Chrome">
+
+        <parameter name="username" value="user@phptravels.com" />
+        <parameter name="password" value="demouser" />
+        <parameter name="fakeUsername" value="fake@phptravels.com" />
+        <parameter name="fakePassword" value="fake" />
+
+
+        <classes>
+
+            <class name="testing.LoginTest" />
+            <class name="testing.HomeTest" />
+
+        </classes>
+
+    </test>
+</suite>
